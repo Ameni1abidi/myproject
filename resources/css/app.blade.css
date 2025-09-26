@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #7c3aed; /* violet */
+    --primary-hover: #6d28d9;
+    --background-color: #111827; /* dark background */
+    --card-background: #1f2937; /* dark card */
+    --text-color: #ddd6fe; /* light violet text */
+    --input-bg: #1f2937;
+    --input-border: #4c1d95;
+    --input-focus-border: #7c3aed;
+    --success-color: #8b5cf6;
+    --success-hover: #7c3aed;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #1f2937;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+    padding: 1.5rem 2rem;
+}
+
+.card-header {
+    border-bottom: 1px solid #4c1d95;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.card-body {
+    padding-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+select.form-control {
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select.form-control:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 8px var(--primary-color);
+}
+
+button.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+button.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
